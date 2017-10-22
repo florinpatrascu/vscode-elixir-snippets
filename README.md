@@ -1,4 +1,4 @@
-# elixir-tm
+# Elixir code snippets for VS Code
 
 Graciously borrowed all the snippets from the [TextMate bundle for Elixir](https://github.com/elixir-editors/elixir-tmbundle) and refactored them to work with VS Code.
 
