@@ -67,7 +67,7 @@
 	},
 	"defmod": {
 		"prefix": "defmod",
-		"body": "defmodule ${1:${TM_FILENAME/(?:\\A|_)([A-Za-z0-9]+)(?:\\.[a-z]+)*/(?2::\\u$1)/g}} do\n\t$0\nend",
+		"body": "defmodule ${1:${TM_FILENAME_BASE/_(.)/${1:/capitalize}/g}} do\n\t$0\nend",
 		"description": "defmodule",
 		"scope": "source.elixir"
 	},
@@ -109,7 +109,7 @@
 	},
 	"fn": {
 		"prefix": "fn",
-		"body": "fn ${1:args}${1/(.+)/(?1: )/}-> $2 end$0",
+		"body": "fn (${1:args}) -> $2 end$0",
 		"description": "fn",
 		"scope": "source.elixir"
 	},
