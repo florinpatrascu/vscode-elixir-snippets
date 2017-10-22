@@ -1,8 +1,8 @@
 {
     "name": "vscode-elixir-snippets",
-    "displayName": "vscode-elixir-snippets",
+    "displayName": "Elixir snippets",
     "description": "Elixir code snippets for VS Code",
-    "version": "0.0.10",
+    "version": "0.0.11",
     "publisher": "florinpatrascu",
     "engines": {
         "vscode": "^1.17.0"
