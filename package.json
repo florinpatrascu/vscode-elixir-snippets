@@ -1,0 +1,21 @@
+{
+    "name": "vscode-elixir-snippets",
+    "displayName": "vscode-elixir-snippets",
+    "description": "TMate Elixir snippets converted for VS Code",
+    "version": "0.0.1",
+    "publisher": "florin",
+    "engines": {
+        "vscode": "^1.17.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "elixir",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}

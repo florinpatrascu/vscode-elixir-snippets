@@ -1,0 +1,223 @@
+{
+	"case": {
+		"prefix": "case",
+		"body": "case $1 do\n  $2 ->\n    $0\nend",
+		"description": "case",
+		"scope": "source.elixir"
+	},
+	"cond": {
+		"prefix": "cond",
+		"body": "cond do\n  $1 ->\n    $0\nend",
+		"description": "cond",
+		"scope": "source.elixir"
+	},
+	"def": {
+		"prefix": "def",
+		"body": "def $1 do\n\t$0\nend",
+		"description": "def",
+		"scope": "source.elixir"
+	},
+	"df": {
+		"prefix": "df",
+		"body": "def $1, do: $0",
+		"description": "def (one line)",
+		"scope": "source.elixir"
+	},
+	"defc": {
+		"prefix": "defc",
+		"body": "defcallback $1 :: $0",
+		"description": "defcallback",
+		"scope": "source.elixir"
+	},
+	"defd": {
+		"prefix": "defd",
+		"body": "defdelegate $1 to: $0",
+		"description": "defdelegate",
+		"scope": "source.elixir"
+	},
+	"defe": {
+		"prefix": "defe",
+		"body": "defexception [${1::message}]",
+		"description": "defexception",
+		"scope": "source.elixir"
+	},
+	"defi": {
+		"prefix": "defi",
+		"body": "defimpl $1, for: $2 do\n  $0\nend",
+		"description": "defimpl",
+		"scope": "source.elixir"
+	},
+	"defm": {
+		"prefix": "defm",
+		"body": "defmacro $1 do\n\t$0\nend",
+		"description": "defmacro",
+		"scope": "source.elixir"
+	},
+	"defmc": {
+		"prefix": "defmc",
+		"body": "defmacrocallback $1 :: $0",
+		"description": "defmacrocallback",
+		"scope": "source.elixir"
+	},
+	"defmp": {
+		"prefix": "defmp",
+		"body": "defmacrop $1 do\n\t$0\nend",
+		"description": "defmacrop",
+		"scope": "source.elixir"
+	},
+	"defmod": {
+		"prefix": "defmod",
+		"body": "defmodule ${1:${TM_FILENAME/(?:\\A|_)([A-Za-z0-9]+)(?:\\.[a-z]+)*/(?2::\\u$1)/g}} do\n\t$0\nend",
+		"description": "defmodule",
+		"scope": "source.elixir"
+	},
+	"defp": {
+		"prefix": "defp",
+		"body": "defp $1 do\n\t$0\nend",
+		"description": "defp",
+		"scope": "source.elixir"
+	},
+	"defpro": {
+		"prefix": "defpro",
+		"body": "defprotocol $1 do\n  $0\nend",
+		"description": "defprotocol",
+		"scope": "source.elixir"
+	},
+	"defs": {
+		"prefix": "defs",
+		"body": "defstruct $1: $2",
+		"description": "defstruct",
+		"scope": "source.elixir"
+	},
+	"do": {
+		"prefix": "do",
+		"body": "do\n\t$0\nend",
+		"description": "do",
+		"scope": "source.elixir"
+	},
+	"doc": {
+		"prefix": "doc",
+		"body": "@doc \"\"\"\n$0\n\"\"\"",
+		"description": "doc",
+		"scope": "source.elixir"
+	},
+	"ee": {
+		"prefix": "ee",
+		"body": "<% $0 %>",
+		"description": "embed_eex",
+		"scope": "text.elixir,text.html.elixir"
+	},
+	"fn": {
+		"prefix": "fn",
+		"body": "fn ${1:args}${1/(.+)/(?1: )/}-> $2 end$0",
+		"description": "fn",
+		"scope": "source.elixir"
+	},
+	"for": {
+		"prefix": "for",
+		"body": "for ${1:item} <- ${2:items} do\n  $0\nend",
+		"description": "for",
+		"scope": "source.elixir"
+	},
+	"if": {
+		"prefix": "if",
+		"body": "if $1 do\n  $0\nend",
+		"description": "if",
+		"scope": "source.elixir"
+	},
+	"ife": {
+		"prefix": "ife",
+		"body": "if $1 do\n  $2\nelse\n  $0\nend",
+		"description": "if else",
+		"scope": "source.elixir"
+	},
+	"ife:": {
+		"prefix": "ife:",
+		"body": "if $1, do: $2, else: $0",
+		"description": "if else (one line)",
+		"scope": "source.elixir"
+	},
+	"if:": {
+		"prefix": "if:",
+		"body": "if $1, do: $0",
+		"description": "if (one line)",
+		"scope": "source.elixir"
+	},
+	"imp": {
+		"prefix": "imp",
+		"body": "import $0",
+		"description": "import",
+		"scope": "source.elixir"
+	},
+	"i": {
+		"prefix": "i",
+		"body": "inspect($0)",
+		"description": "IO.inspect",
+		"scope": "source.elixir"
+	},
+	"ii": {
+		"prefix": "ii",
+		"body": "IO.inspect($0)",
+		"description": "IO.inspect",
+		"scope": "source.elixir"
+	},
+	"::": {
+		"prefix": "::",
+		"body": "${1:key} => ${2:value}$0",
+		"description": "key => value",
+		"scope": "source.elixir"
+	},
+	"%": {
+		"prefix": "%",
+		"body": "%${1:Struct}{$2}$0",
+		"description": "map/struct",
+		"scope": "source.elixir"
+	},
+	"mdoc": {
+		"prefix": "mdoc",
+		"body": "@moduledoc \"\"\"\n$0\n\"\"\"",
+		"description": "moduledoc"
+	},
+	"pe": {
+		"prefix": "pe",
+		"body": "<%= $0 %>",
+		"description": "print_eex",
+		"scope": "text.elixir,text.html.elixir"
+	},
+	"rec": {
+		"prefix": "rec",
+		"body": "receive do\n\t${1:{${2::${3:message_type}}, ${4:value}\\}} ->\n    ${0:# code}\nend\n",
+		"description": "receive",
+		"scope": "source.elixir"
+	},
+	"req": {
+		"prefix": "req",
+		"body": "require $0",
+		"description": "require",
+		"scope": "source.elixir"
+	},
+	"unless": {
+		"prefix": "unless",
+		"body": "unless $1 do\n  $0\nend",
+		"description": "unless",
+		"scope": "source.elixir"
+	},
+	"unlesse": {
+		"prefix": "unlesse",
+		"body": "unless $1 do\n  $2\nelse\n  $0\nend",
+		"description": "unless else",
+		"scope": "source.elixir"
+	},
+	"unlesse:": {
+		"prefix": "unlesse:",
+		"body": "unless $1, do: $2, else: $0",
+		"description": "unless else (one line)",
+		"scope": "source.elixir"
+	},
+	"unless:": {
+		"prefix": "unless:",
+		"body": "unless $1, do: $0",
+		"description": "unless (one line)",
+		"scope": "source.elixir"
+	}
+}
