@@ -3,8 +3,9 @@
 Graciously borrowed all the snippets from the [TextMate bundle for Elixir](https://github.com/elixir-editors/elixir-tmbundle) and refactored them to work with VS Code.
 
 ## Quick setup
+Install it from: [florinpatrascu.vscode-elixir-snippets](https://marketplace.visualstudio.com/items?itemName=florinpatrascu.vscode-elixir-snippets)
 
-To start using this extension with Visual Studio Code:
+Or if you want to contribute with updates:
 
 ```sh
 
