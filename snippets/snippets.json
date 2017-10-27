@@ -119,6 +119,12 @@
 		"description": "for",
 		"scope": "source.elixir"
 	},
+	"fori": {
+		"prefix": "fori",
+		"body": "for ${1:item} <- ${2:items}, into: ${3:[]} do;\n  $0\nend",
+		"description": "for into",
+		"scope": "source.elixir"
+	},
 	"if": {
 		"prefix": "if",
 		"body": "if $1 do\n  $0\nend",
@@ -152,13 +158,25 @@
 	"i": {
 		"prefix": "i",
 		"body": "inspect($0)",
-		"description": "IO.inspect",
+		"description": "inspect",
 		"scope": "source.elixir"
 	},
 	"ii": {
 		"prefix": "ii",
 		"body": "IO.inspect($0)",
 		"description": "IO.inspect",
+		"scope": "source.elixir"
+	},
+	"iil": {
+		"prefix": "iil",
+		"body": "IO.inspect(label: \"$0\")",
+		"description": "IO.inspect(label: ...)",
+		"scope": "source.elixir"
+	},
+	"iip": {
+		"prefix": "iip",
+		"body": "IO.puts(\"$0\")",
+		"description": "IO.puts(..)",
 		"scope": "source.elixir"
 	},
 	"::": {
