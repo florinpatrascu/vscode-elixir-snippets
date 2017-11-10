@@ -67,7 +67,7 @@
 	},
 	"defmod": {
 		"prefix": "defmod",
-		"body": "defmodule ${1:${TM_FILENAME_BASE/_(.)/${1:/capitalize}/g}} do\n\t$0\nend",
+		"body": "defmodule ${1:${TM_FILENAME_BASE/^(.)|_(.)/${1:/upcase}${2:/upcase}/gm}} do\n\t$0\nend",
 		"description": "defmodule",
 		"scope": "source.elixir"
 	},
