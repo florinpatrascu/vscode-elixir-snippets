@@ -241,12 +241,14 @@
 	"Supervisor": {
 		"prefix": "supervisor",
 		"body": [
-			"defmodule ${0:moduleName} do",
+			"defmodule ${1:moduleName} do",
 			"\tuse Supervisor",
 			"",
-			"\tdef start_link(), do: Supervisor.start_link(__MODULE__, [], name: __MODULE__)",
+			"\tdef start_link(${0:args}) do",
+			"\t\tSupervisor.start_link(__MODULE__, [${0:args}], name: __MODULE__)",
+			"\tend"
 			"",
-			"\tdef init([]) do",
+			"\tdef init([${0:args}]) do",
 			"\t\tchildren = []",
 			"",
 			"\t\tSupervisor.init(children, strategy: :one_for_one)",
