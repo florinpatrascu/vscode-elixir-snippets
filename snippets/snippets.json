@@ -237,5 +237,54 @@
 		"body": "unless $1, do: $0",
 		"description": "unless (one line)",
 		"scope": "source.elixir"
+	},
+	"Supervisor": {
+		"prefix": "supervisor",
+		"body": [
+			"defmodule ${moduleName} do",
+			"\tuse Supervisor",
+			"",
+			"\tdef start_link(${args}) do",
+			"\t\tSupervisor.start_link(__MODULE__, [${args}], name: __MODULE__)",
+			"\tend",
+			"",
+			"\tdef init([${args}]) do",
+			"\t\tchildren = []",
+			"",
+			"\t\tSupervisor.init(children, strategy: :one_for_one)",
+			"\tend",
+			"end"
+		],
+		"description": "Insert code for a OTP Supervisor"
+	},
+	"DynamicSupervisor": {
+		"prefix": "dynamic_supervisor",
+		"body": [
+			"defmodule ${ModuleName} do",
+			"\tuse DynamicSupervisor",
+			"",
+			"\tdef start_link(${init_args}) do",
+			"\t\tDynamicSupervisor.start_link(__MODULE__, [${init_args}], name: __MODULE__)",
+			"\tend",
+			"",
+			"\tdef start_child(${child_args}) do",
+			"\t\tchild_spec = %{",
+				"\t\t\tid: ${ChildModule},",
+				"\t\t\tstart: {${ChildModule}, :start_link, [${child_args}]},",
+				"\t\t\trestart: :transient,",
+				"\t\t\tshutdown: :brutal_kill,",
+				"\t\t\ttype: :worker,",
+				"\t\t\tmodules: [${ChildModule}],",
+			"\t\t}",
+			"",
+			"\t\tDynamicSupervisor.start_child(__MODULE__, child_spec)",
+			"\tend",
+			"",
+			"\tdef init([${init_args}]) do",
+			"\t\tDynamicSupervisor.init(strategy: :one_for_one)",
+			"\tend",
+			"end"
+		],
+		"description": "Insert code for a DynamicSupervisor"
 	}
 }
