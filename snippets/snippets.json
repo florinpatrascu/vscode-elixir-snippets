@@ -246,7 +246,7 @@
 			"",
 			"\tdef start_link(${args}) do",
 			"\t\tSupervisor.start_link(__MODULE__, [${args}], name: __MODULE__)",
-			"\tend"
+			"\tend",
 			"",
 			"\tdef init([${args}]) do",
 			"\t\tchildren = []",
