@@ -46,6 +46,9 @@ Graciously borrowed all the snippets from the [TextMate bundle for Elixir](https
 |unlesse | unless else|
 |unlesse: | unless else (one line)|
 |unless: | unless (one line)|
+|supervisor | OTP Supervisor module|
+|gen_server | OTP GenServer module|
+|dynamic_supervisor | Elixir DynamicSupervisor module|
 
 ## Quick setup
 

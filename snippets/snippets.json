@@ -255,7 +255,7 @@
 			"\tend",
 			"end"
 		],
-		"description": "Insert code for a OTP Supervisor"
+		"description": "Insert code for an OTP Supervisor"
 	},
 	"DynamicSupervisor": {
 		"prefix": "dynamic_supervisor",
@@ -286,5 +286,24 @@
 			"end"
 		],
 		"description": "Insert code for a DynamicSupervisor"
+	},
+	"GenServer": {
+		"prefix": "gen_server",
+		"body": [
+			"defmodule ${ModuleName} do",
+			"\tuse GenServer",
+			"",
+			"\tdef start_link(${init_args}) do",
+			"\t\t# you may want to register your server with `name: __MODULE__`",
+			"\t\t# as a third argument to `start_link`",
+			"\t\tGenServer.start_link(__MODULE__, [${init_args}])",
+			"\tend",
+			"",
+			"\tdef init(_args) do",
+			"\t\t{:ok, :initial_state}",
+			"\tend",
+			"end"
+		],
+		"description": "Insert code for a OTP GenServer"
 	}
 }
