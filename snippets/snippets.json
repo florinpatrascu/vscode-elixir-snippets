@@ -237,5 +237,22 @@
 		"body": "unless $1, do: $0",
 		"description": "unless (one line)",
 		"scope": "source.elixir"
+	},
+	"Supervisor": {
+		"prefix": "supervisor",
+		"body": [
+			"defmodule ${0:moduleName} do",
+			"\tuse Supervisor",
+			"",
+			"\tdef start_link(), do: Supervisor.start_link(__MODULE__, [], name: __MODULE__)",
+			"",
+			"\tdef init([]) do",
+			"\t\tchildren = []",
+			"",
+			"\t\tSupervisor.init(children, strategy: :one_for_one)",
+			"\tend",
+			"end"
+		],
+		"description": "Insert code for a OTP Supervisor"
 	}
 }
