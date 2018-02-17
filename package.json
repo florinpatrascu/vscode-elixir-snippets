@@ -2,8 +2,9 @@
     "name": "vscode-elixir-snippets",
     "displayName": "Elixir snippets",
     "description": "Elixir code snippets for VS Code",
-    "version": "0.0.21",
+    "version": "0.0.22",
     "publisher": "florinpatrascu",
+    "license": "MIT",
     "engines": {
         "vscode": "^1.17.0"
     },
@@ -22,5 +23,8 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/florinpatrascu/vscode-elixir-snippets"
+    },
+    "dependencies": {
+        "vso-node-api": "^6.1.2-preview"
     }
 }
