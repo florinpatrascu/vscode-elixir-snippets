@@ -220,6 +220,30 @@
 		"description": "unless",
 		"scope": "source.elixir"
 	},
+	"ok": {
+		"prefix": "ok",
+		"body": "{:ok, $0}",
+		"description": "{:ok, ... }",
+		"scope": "source.elixir"
+	},
+	"err": {
+		"prefix": "error",
+		"body": "{:error, $0}",
+		"description": "{:error, ... }",
+		"scope": "source.elixir"
+	},
+	"trc": {
+		"prefix": "trc",
+		"body": "try do\n  $0\ncatch\n $1 -> $2\nend",
+		"description": "try catch",
+		"scope": "source.elixir"
+	},
+	"trr": {
+		"prefix": "trr",
+		"body": "try do\n  $0\nrescue\n  _ -> :rescued\nend",
+		"description": "try rescue (everything!)",
+		"scope": "source.elixir"
+	},
 	"unlesse": {
 		"prefix": "unlesse",
 		"body": "unless $1 do\n  $2\nelse\n  $0\nend",
@@ -269,12 +293,12 @@
 			"",
 			"\tdef start_child(${child_args}) do",
 			"\t\tchild_spec = %{",
-				"\t\t\tid: ${ChildModule},",
-				"\t\t\tstart: {${ChildModule}, :start_link, [${child_args}]},",
-				"\t\t\trestart: :transient,",
-				"\t\t\tshutdown: :brutal_kill,",
-				"\t\t\ttype: :worker,",
-				"\t\t\tmodules: [${ChildModule}],",
+			"\t\t\tid: ${ChildModule},",
+			"\t\t\tstart: {${ChildModule}, :start_link, [${child_args}]},",
+			"\t\t\trestart: :transient,",
+			"\t\t\tshutdown: :brutal_kill,",
+			"\t\t\ttype: :worker,",
+			"\t\t\tmodules: [${ChildModule}],",
 			"\t\t}",
 			"",
 			"\t\tDynamicSupervisor.start_child(__MODULE__, child_spec)",
