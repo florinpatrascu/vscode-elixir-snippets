@@ -222,14 +222,26 @@
 	},
 	"ok": {
 		"prefix": "ok",
-		"body": "{:ok, $0}",
-		"description": "{:ok, ... }",
+		"body": "{:ok, $1} $0",
+		"description": "{:ok, ... } ...",
 		"scope": "source.elixir"
 	},
 	"err": {
 		"prefix": "error",
-		"body": "{:error, $0}",
-		"description": "{:error, ... }",
+		"body": "{:error, $1} $0",
+		"description": "{:error, ... } ...",
+		"scope": "source.elixir"
+	},
+	"oke": {
+		"prefix": "ok",
+		"body": "{:ok, $1} $0",
+		"description": "{:ok, ... } = ...",
+		"scope": "source.elixir"
+	},
+	"erre": {
+		"prefix": "error",
+		"body": "{:error, $1} = $0",
+		"description": "{:error, ... } = ...",
 		"scope": "source.elixir"
 	},
 	"trc": {

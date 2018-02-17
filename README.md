@@ -24,8 +24,10 @@ Graciously borrowed all the snippets from the [TextMate bundle for Elixir](https
 |do | do|
 |doc | doc|
 |ee | embed_eex|
-|ok | {:ok, ..}|
-|err | {:error, ..}|
+|ok | {:ok, ..} ...|
+|err | {:error, ..} ...|
+|oke | {:ok, ..} = ...|
+|erre | {:error, ..} = ...|
 |trc | try do catch|
 |trr | try do rescue (everything!)|
 |fn | fn|
