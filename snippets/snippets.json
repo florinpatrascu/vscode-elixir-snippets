@@ -220,6 +220,18 @@
 		"description": "unless",
 		"scope": "source.elixir"
 	},
+	"oke": {
+		"prefix": "ok",
+		"body": "{:ok, $1} = $0",
+		"description": "{:ok, ... } = ...",
+		"scope": "source.elixir"
+	},
+	"erre": {
+		"prefix": "error",
+		"body": "{:error, $1} = $0",
+		"description": "{:error, ... } = ...",
+		"scope": "source.elixir"
+	},
 	"ok": {
 		"prefix": "ok",
 		"body": "{:ok, $1} $0",
@@ -230,18 +242,6 @@
 		"prefix": "error",
 		"body": "{:error, $1} $0",
 		"description": "{:error, ... } ...",
-		"scope": "source.elixir"
-	},
-	"oke": {
-		"prefix": "ok",
-		"body": "{:ok, $1} $0",
-		"description": "{:ok, ... } = ...",
-		"scope": "source.elixir"
-	},
-	"erre": {
-		"prefix": "error",
-		"body": "{:error, $1} = $0",
-		"description": "{:error, ... } = ...",
 		"scope": "source.elixir"
 	},
 	"trc": {

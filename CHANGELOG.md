@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.2.25
+
+- genserver, try/catch/rescue, snippets for {:ok/error, ... } and so much more. Please see the README, from more details. Enjoy!
+
 ## v0.0.17
 
 - fixes #1, the `defmod` snippet is now able to transform the current file name to an Elixir module name i.e. my_module.exs to MyModule. Requires the latest VSCode ~> 1.18.0
