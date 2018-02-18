@@ -2,9 +2,8 @@
     "name": "vscode-elixir-snippets",
     "displayName": "Elixir snippets",
     "description": "Elixir code snippets for VS Code",
-    "version": "0.0.23",
+    "version": "0.0.24",
     "publisher": "florinpatrascu",
-    "license": "MIT",
     "engines": {
         "vscode": "^1.17.0"
     },
