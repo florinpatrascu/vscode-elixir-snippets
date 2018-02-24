@@ -55,6 +55,8 @@ Graciously borrowed all the snippets from the [TextMate bundle for Elixir](https
 |supervisor | OTP Supervisor module|
 |gen_server | OTP GenServer module|
 |dynamic_supervisor | Elixir DynamicSupervisor module|
+|wt| with .. do ..|
+|wte| with .. do .. else ..|
 
 ## Quick setup
 

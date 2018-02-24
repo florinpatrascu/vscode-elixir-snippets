@@ -291,7 +291,8 @@
 			"\tend",
 			"end"
 		],
-		"description": "Insert code for an OTP Supervisor"
+		"description": "Insert code for an OTP Supervisor",
+		"scope": "source.elixir"
 	},
 	"DynamicSupervisor": {
 		"prefix": "dynamic_supervisor",
@@ -321,7 +322,8 @@
 			"\tend",
 			"end"
 		],
-		"description": "Insert code for a DynamicSupervisor"
+		"description": "Insert code for a DynamicSupervisor",
+		"scope": "source.elixir"
 	},
 	"GenServer": {
 		"prefix": "gen_server",
@@ -340,6 +342,29 @@
 			"\tend",
 			"end"
 		],
-		"description": "Insert code for a OTP GenServer"
+		"description": "Insert code for a OTP GenServer",
+		"scope": "source.elixir"
+	},
+	"wt": {
+		"prefix": "wt",
+		"body": [
+			"with $1 do",
+			"\t$0",
+			"end"
+		],
+		"description": "with",
+		"scope": "source.elixir"
+	},
+	"wte": {
+		"prefix": "wte",
+		"body": [
+			"with $1 do",
+			"\t$0",
+			"else",
+			"\t$2 -> $3",
+			"end"
+		],
+		"description": "with/else",
+		"scope": "source.elixir"
 	}
 }

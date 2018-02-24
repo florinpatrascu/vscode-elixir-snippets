@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.2.26
+
+- long time waiting for it .. `with` and `with/else` :)
+
 ## v0.2.25
 
 - genserver, try/catch/rescue, snippets for {:ok/error, ... } and so much more. Please see the README, from more details. Enjoy!
