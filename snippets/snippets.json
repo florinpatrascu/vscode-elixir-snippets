@@ -196,6 +196,12 @@
 		"body": "@moduledoc \"\"\"\n$0\n\"\"\"",
 		"description": "moduledoc"
 	},
+	"p": {
+		"prefix": "p",
+		"body": "|> $0",
+		"description": "your favourite pipeline",
+		"scope": "text.elixir,"
+	},
 	"pe": {
 		"prefix": "pe",
 		"body": "<%= $0 %>",
