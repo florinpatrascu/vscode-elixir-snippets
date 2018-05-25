@@ -42,6 +42,7 @@ Graciously borrowed all the snippets from the [TextMate bundle for Elixir](https
 |ii | IO.inspect|
 |iil | IO.inspect(label: ..)|
 |iip | IO.puts( ..)|
+|p | the pipeline operator |> |
 |:: | key => value|
 |% | map/struct|
 |mdoc | moduledoc|

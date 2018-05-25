@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.2.27
+
+- add "p" for pipeline operator |> Thank you: @crunchysoul
+
 ## v0.2.26
 
 - long time waiting for it .. `with` and `with/else` :)
