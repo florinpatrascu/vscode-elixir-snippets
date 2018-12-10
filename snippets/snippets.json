@@ -169,7 +169,7 @@
 	},
 	"iib": {
 		"prefix": "iib",
-		"body": "IO.inspect(binding(), label: \"binding() #{__MODULE__}:#{__ENV__.line} #{Timex.now}\", limit: :infinity)",
+		"body": "IO.inspect(binding(), label: \"binding() #{__MODULE__}:#{__ENV__.line} #{DateTime.utc_now}\", limit: :infinity)",
 		"description": "IO.inspect() binding() with module name & line number"
 	},
 	"iil": {
@@ -180,7 +180,7 @@
 	},
 	"iip": {
 		"prefix": "iip",
-		"body": "|> IO.inspect(label: \"#{__MODULE__}:#{__ENV__.line} #{Timex.now}\", limit: :infinity)",
+		"body": "|> IO.inspect(label: \"#{__MODULE__}:#{__ENV__.line} #{DateTime.utc_now}\", limit: :infinity)",
 		"description": "IO.inspect() piped value with module name & line number"
 	},
 	"ip": {
