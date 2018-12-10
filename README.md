@@ -42,7 +42,7 @@ Graciously borrowed all the snippets from the [TextMate bundle for Elixir](https
 |ii | IO.inspect|
 |iib | IO.inspect(binding(), module:line)|
 |iil | IO.inspect(label: ..)|
-|iip | |> IO.inspect(module:line)|
+|iip | pipe to IO.inspect(module:line)|
 |ip | IO.puts( ..)|
 |p | the pipeline operator |> |
 |:: | key => value|
