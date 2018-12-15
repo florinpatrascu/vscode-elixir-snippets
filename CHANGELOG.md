@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.2.28
+
+- Merge pull request #5 from ZachParsons/location-inspect. Thank you!
+
 ## v0.2.27
 
 - add "p" for pipeline operator |> Thank you: @crunchysoul
