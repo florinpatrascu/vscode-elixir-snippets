@@ -40,8 +40,10 @@ Graciously borrowed all the snippets from the [TextMate bundle for Elixir](https
 |imp | import|
 |i | inspect|
 |ii | IO.inspect|
+|iib | IO.inspect(binding(), module:line)|
 |iil | IO.inspect(label: ..)|
-|iip | IO.puts( ..)|
+|iip | pipe to IO.inspect(module:line)|
+|ip | IO.puts( ..)|
 |p | the pipeline operator |> |
 |:: | key => value|
 |% | map/struct|

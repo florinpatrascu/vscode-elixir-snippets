@@ -167,6 +167,11 @@
 		"description": "IO.inspect",
 		"scope": "source.elixir"
 	},
+	"iib": {
+		"prefix": "iib",
+		"body": "IO.inspect(binding(), label: \"binding() #{__MODULE__}:#{__ENV__.line} #{DateTime.utc_now}\", limit: :infinity)",
+		"description": "IO.inspect() binding() with module name & line number"
+	},
 	"iil": {
 		"prefix": "iil",
 		"body": "IO.inspect(label: \"$0\")",
@@ -174,6 +179,11 @@
 		"scope": "source.elixir"
 	},
 	"iip": {
+		"prefix": "iip",
+		"body": "|> IO.inspect(label: \"#{__MODULE__}:#{__ENV__.line} #{DateTime.utc_now}\", limit: :infinity)",
+		"description": "IO.inspect() piped value with module name & line number"
+	},
+	"ip": {
 		"prefix": "iip",
 		"body": "IO.puts(\"$0\")",
 		"description": "IO.puts(..)",
