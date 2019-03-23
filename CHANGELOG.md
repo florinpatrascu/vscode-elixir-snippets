@@ -1,5 +1,10 @@
 # Change Log
 
+## v0.2.29
+
+- New snippet: `iill`
+  An `IO.inspect` with an optional custom message, displaying the file path relative to the app's root folder and the line number in the code where the inspect is defined. If your shell supports it, i.e. iTerm2, then you're just one-click away from jumping to the exact line in the code, where the inspect is. No more searching for forgotten inspects!
+
 ## v0.2.28
 
 - Merge pull request #5 from ZachParsons/location-inspect. Thank you!

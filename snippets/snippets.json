@@ -178,6 +178,12 @@
 		"description": "IO.inspect(label: ...)",
 		"scope": "source.elixir"
 	},
+	"iill": {
+		"prefix": "iill",
+		"body": "IO.inspect(label: \"${0:message; }#{String.replace_leading(\"#{__ENV__.file}\", \"#{File.cwd!()}\",\"\")|> Path.relative()}:#{__ENV__.line()}\")",
+		"description": "IO.inspect(label: \"<optional message>; Module:line_nr\")",
+		"scope": "source.elixir"
+	},
 	"iip": {
 		"prefix": "iip",
 		"body": "|> IO.inspect(label: \"#{__MODULE__}:#{__ENV__.line} #{DateTime.utc_now}\", limit: :infinity)",
@@ -209,7 +215,7 @@
 	"p": {
 		"prefix": "p",
 		"body": "|> $0",
-		"description": "your favourite pipeline",
+		"description": "your favorite pipeline (|>)",
 		"scope": "text.elixir,"
 	},
 	"pe": {
