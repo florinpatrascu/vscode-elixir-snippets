@@ -1,5 +1,12 @@
 # Change Log
 
+## v0.2.30
+
+- replace `defmod` with `dmod`, for inserting `defmodule ...`
+- replace `defm` with `dmac`, for inserting `defmacro ...`
+- new snippet: `mfs`, Map from Struct
+- new snippet: `msan`, sanitize a Map, by dropping some of its keys
+
 ## v0.2.29
 
 - New snippet: `iill`

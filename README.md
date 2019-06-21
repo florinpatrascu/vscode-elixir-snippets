@@ -14,10 +14,10 @@ Graciously borrowed all the snippets from the [TextMate bundle for Elixir](https
 | defd   | defdelegate                                 |
 | defe   | defexception                                |
 | defi   | defimpl                                     |
-| defm   | defmacro                                    |
+| dmod   | defmodule                                   |
 | defmc  | defmacrocallback                            |
 | defmp  | defmacrop                                   |
-| defmod | defmodule                                   |
+| dmac   | defmacro                                    |
 | defp   | defp                                        |
 | defpro | defprotocol                                 |
 | defs   | defstruct                                   |
@@ -48,6 +48,8 @@ Graciously borrowed all the snippets from the [TextMate bundle for Elixir](https
 | p                  | the pipeline operator |>                    |
 | %                  | map/struct                                  |
 | mdoc               | moduledoc                                   |
+| mfs                | map from struct                             |
+| msan               | sanitize a Map by dropping some of its keys |
 | pe                 | print_eex                                   |
 | rec                | receive                                     |
 | req                | require                                     |

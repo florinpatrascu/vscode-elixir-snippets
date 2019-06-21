@@ -47,8 +47,8 @@
 		"description": "defimpl",
 		"scope": "source.elixir"
 	},
-	"defm": {
-		"prefix": "defm",
+	"dmac": {
+		"prefix": ["dmac", "defmac"],
 		"body": "defmacro $1 do\n\t$0\nend",
 		"description": "defmacro",
 		"scope": "source.elixir"
@@ -65,10 +65,10 @@
 		"description": "defmacrop",
 		"scope": "source.elixir"
 	},
-	"defmod": {
-		"prefix": "defmod",
+	"dmod": {
+		"prefix": ["dmod", "defmod"],
 		"body": "defmodule ${1:${TM_FILENAME_BASE/^(.)|_(.)/${1:/upcase}${2:/upcase}/gm}} do\n\t$0\nend",
-		"description": "defmodule",
+		"description": "def module",
 		"scope": "source.elixir"
 	},
 	"defp": {
@@ -109,7 +109,7 @@
 	},
 	"fn": {
 		"prefix": "fn",
-		"body": "fn (${1:args}) -> $2 end$0",
+		"body": "fn ${1:args} -> $2 end$0",
 		"description": "fn",
 		"scope": "source.elixir"
 	},
@@ -211,6 +211,18 @@
 		"prefix": "mdoc",
 		"body": "@moduledoc \"\"\"\n$0\n\"\"\"",
 		"description": "moduledoc"
+	},
+	"mfs": {
+		"prefix": "mfs",
+		"body": "Map.from_struct($0)",
+		"description": "Map from Struct",
+		"scope": "source.elixir,"
+	},
+	"msan": {
+		"prefix": "msan",
+		"body": "Map.drop(${1:map, }[${2:keys}])",
+		"description": "sanitize a map by dropping some keys",
+		"scope": "source.elixir,"
 	},
 	"p": {
 		"prefix": "p",
