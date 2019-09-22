@@ -379,6 +379,22 @@
 		"description": "Insert code for a OTP GenServer",
 		"scope": "source.elixir"
 	},
+	"ExUnit": {
+		"prefix": "ex_unit",
+		"body": [
+			"defmodule ${ModuleName}Test do",
+			"\tuse ExUnit.Case",
+			"\tdoctest ${ModuleName}",
+			"",
+			"\tdescribe \"${description_of_tests}\" do",
+			"\t\ttest \"${definition_of_this_test}\" do",
+			"\t\tend",
+			"\tend",
+			"end"
+		],
+		"description": "Insert code for a ExUnit",
+		"scope": "source.elixir"
+	},
 	"wt": {
 		"prefix": "wt",
 		"body": [
