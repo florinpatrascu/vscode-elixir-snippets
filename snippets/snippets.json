@@ -380,7 +380,7 @@
 		"scope": "source.elixir"
 	},
 	"ExUnit": {
-		"prefix": "ex_unit",
+		"prefix": ["ex_unit" "exu"],
 		"body": [
 			"defmodule ${ModuleName}Test do",
 			"\tuse ExUnit.Case",

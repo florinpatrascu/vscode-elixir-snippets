@@ -1,5 +1,11 @@
 # Change Log
 
+## v0.2.31
+
+- fix version numbering
+- merge the ex_unit template from @neofelisho, thank you!
+- README
+
 ## v0.2.30
 
 - replace `defmod` with `dmod`, for inserting `defmodule ...`

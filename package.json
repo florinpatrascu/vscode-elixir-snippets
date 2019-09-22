@@ -1,24 +1,26 @@
 {
-    "name": "vscode-elixir-snippets",
-    "displayName": "Elixir snippets",
-    "description": "Elixir code snippets for VS Code",
-    "version": "0.0.30",
-    "publisher": "florinpatrascu",
-    "engines": {
-        "vscode": "^1.17.0"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "icon": "images/icon.png",
-    "contributes": {
-        "snippets": [{
-            "language": "elixir",
-            "path": "./snippets/snippets.json"
-        }]
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/florinpatrascu/vscode-elixir-snippets"
-    }
+  "name": "vscode-elixir-snippets",
+  "displayName": "Elixir snippets",
+  "description": "Elixir code snippets for VS Code",
+  "version": "0.2.31",
+  "publisher": "florinpatrascu",
+  "engines": {
+    "vscode": "^1.17.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "icon": "images/icon.png",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "elixir",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/florinpatrascu/vscode-elixir-snippets"
+  }
 }
