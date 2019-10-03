@@ -278,6 +278,12 @@
 		"description": "{:error, ... } ...",
 		"scope": "source.elixir"
 	},
+	"test": {
+		"prefix": "test",
+		"body": "test $1 do\n\t$0\nend",
+		"description": "test",
+		"scope": "source.elixir"
+	},
 	"trc": {
 		"prefix": "trc",
 		"body": "try do\n  $0\ncatch\n $1 -> $2\nend",
