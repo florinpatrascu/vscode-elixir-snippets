@@ -17,6 +17,7 @@ Graciously borrowed all the snippets from the [TextMate bundle for Elixir](https
 | dmod         | defmodule                                   |
 | defmc        | defmacrocallback                            |
 | defmp        | defmacrop                                   |
+| describe     | describe .. do ..                           |
 | dmac         | defmacro                                    |
 | defp         | defp                                        |
 | defpro       | defprotocol                                 |

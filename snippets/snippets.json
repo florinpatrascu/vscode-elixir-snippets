@@ -65,6 +65,12 @@
 		"description": "defmacrop",
 		"scope": "source.elixir"
 	},
+	"describe": {
+		"prefix": "describe",
+		"body": "describe $1 do\n\t$0\nend",
+		"description": "describe",
+		"scope": "source.elixir"
+	},
 	"dmod": {
 		"prefix": ["dmod", "defmod"],
 		"body": "defmodule ${1:${TM_FILENAME_BASE/^(.)|_(.)/${1:/upcase}${2:/upcase}/gm}} do\n\t$0\nend",
