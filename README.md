@@ -54,6 +54,7 @@ Graciously borrowed all the snippets from the [TextMate bundle for Elixir](https
 | pe                 | print_eex                                   |
 | rec                | receive                                     |
 | req                | require                                     |
+| test               | test .. do ..                               |
 | unless             | unless                                      |
 | unlesse            | unless else                                 |
 | unlesse:           | unless else (one line)                      |
