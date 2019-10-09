@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.2.32
+
+- test and describe snippets
+
 ## v0.2.31
 
 - fix version numbering
