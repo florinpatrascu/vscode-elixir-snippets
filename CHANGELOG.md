@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.2.33
+
+- bugfix: Fix comma in array for ExUnit snippet #9. Thank you @ewired
+
 ## v0.2.32
 
 - test and describe snippets
