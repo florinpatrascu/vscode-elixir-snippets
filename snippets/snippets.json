@@ -394,12 +394,12 @@
 	"ExUnit": {
 		"prefix": ["ex_unit", "exu"],
 		"body": [
-			"defmodule ${ModuleName}Test do",
+			"defmodule${1:${TM_DIRECTORY/(^.+\\\/test|\\b)\\\/(\\w+)/${1:? :.}${2:/pascalcase}/g}.${TM_FILENAME_BASE/(.+)_test/${1:/pascalcase}/}}Test do",
 			"\tuse ExUnit.Case",
-			"\tdoctest ${ModuleName}",
+			"\tdoctest$1",
 			"",
-			"\tdescribe \"${description_of_tests}\" do",
-			"\t\ttest \"${definition_of_this_test}\" do",
+			"\tdescribe \"${2:description_of_tests}\" do",
+			"\t\ttest \"${3:definition_of_this_test}\" do",
 			"\t\tend",
 			"\tend",
 			"end"
