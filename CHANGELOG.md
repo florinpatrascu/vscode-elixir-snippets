@@ -1,5 +1,11 @@
 # Change Log
 
+## v0.2.34
+
+- Reduced complexity of the syntax
+- Generate module name from file path
+- ^^^ PR from @marocchino Thank you <3
+
 ## v0.2.33
 
 - bugfix: Fix comma in array for ExUnit snippet #9. Thank you @ewired
