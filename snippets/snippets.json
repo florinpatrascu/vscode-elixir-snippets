@@ -74,9 +74,10 @@
 	"dmod": {
 		"prefix": ["dmod", "defmod"],
 		"body": [
-			// This monster of a regex optionally matches on up to 14 nested folders under lib|test|spec and generates the namespace name from those
-			// So a file with the path `lib/foo/bar/baz/boing.ex` would resolve to `defmodule Foo.Bar.Baz.Boing do`
-			"defmodule ${1:${TM_FILEPATH/^.*\\/(?:lib|test|spec)(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?\\/([^\\/]+)\\.exs?/${1:/pascalcase}${1:+.}${2:/pascalcase}${2:+.}${3:/pascalcase}${3:+.}${4:/pascalcase}${4:+.}${5:/pascalcase}${5:+.}${6:/pascalcase}${6:+.}${7:/pascalcase}${7:+.}${8:/pascalcase}${8:+.}${9:/pascalcase}${9:+.}${10:/pascalcase}${10:+.}${11:/pascalcase}${11:+.}${12:/pascalcase}${12:+.}${13:/pascalcase}${13:+.}${14:/pascalcase}${14:+.}${15:/pascalcase}/}} do",
+			// This monster of a regex optionally matches on up to 15 nested folders under lib|test|spec and generates the namespace name from those.
+			// So a file with the path `lib/foo/bar/baz/boing.ex` would resolve to `defmodule Foo.Bar.Baz.Boing do`.
+			// If the file is not under lib|test|spec it will just use the filename to generate the module name.
+			"defmodule ${1:${TM_FILEPATH/^(?:.*\\/(?:lib|test|spec)(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?\\/.*\\..*|.*)$/${1:/pascalcase}${1:+.}${2:/pascalcase}${2:+.}${3:/pascalcase}${3:+.}${4:/pascalcase}${4:+.}${5:/pascalcase}${5:+.}${6:/pascalcase}${6:+.}${7:/pascalcase}${7:+.}${8:/pascalcase}${8:+.}${9:/pascalcase}${9:+.}${10:/pascalcase}${10:+.}${11:/pascalcase}${11:+.}${12:/pascalcase}${12:+.}${13:/pascalcase}${13:+.}${14:/pascalcase}${14:+.}${15:/pascalcase}${15:+.}/}}${2:${TM_FILENAME_BASE/(.+)/${1:/pascalcase}/}} do",
 			"  $0",
 			"end",
 		],
