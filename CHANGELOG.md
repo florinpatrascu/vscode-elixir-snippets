@@ -1,5 +1,12 @@
 # Change Log
 
+## v0.2.35
+
+- New snippet: `iins`; `IO.inspect` with a label containing relative path and line number. Label string can easily be discarded
+  inspired bby this [tip](https://elixirstream.dev/tips/7bca7ae3-1431-4bb1-bf2c-1ee3c5390a40) I added my own take on it. Hopefully you can enjoy this newer version as much as I do :)
+- dmod: Make more robust when used outside default folders #13
+- ^^^ Thank you @sascha-wolf <3
+
 ## v0.2.34
 
 - Reduced complexity of the syntax
