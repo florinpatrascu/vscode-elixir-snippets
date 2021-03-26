@@ -5,7 +5,7 @@ Graciously borrowed all the snippets from the [TextMate bundle for Elixir](https
 ## Snippets
 
 | prefix             | description                                                                                              |
-| ------------------ | -------------------------------------------------------------------------------------------------------- | --- |
+| ------------------ | -------------------------------------------------------------------------------------------------------- |
 | case               | case                                                                                                     |
 | cond               | cond                                                                                                     |
 | def                | def                                                                                                      |
@@ -48,7 +48,7 @@ Graciously borrowed all the snippets from the [TextMate bundle for Elixir](https
 | iins               | `IO.inspect` with a label containing relative path and line number. Label string can easily be discarded |
 | iip                | pipe to IO.inspect(module:line)                                                                          |
 | ip                 | IO.puts( ..)                                                                                             |
-| p                  | the pipeline operator                                                                                    | >   |
+| p                  | the pipeline operator                                                                                    |
 | %                  | map/struct                                                                                               |
 | mdoc               | moduledoc                                                                                                |
 | mfs                | map from struct                                                                                          |
