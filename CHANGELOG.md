@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.2.36
+
+- readme format fix
+
 ## v0.2.35
 
 - New snippet: `iins`; `IO.inspect` with a label containing relative path and line number. Label string can easily be discarded
