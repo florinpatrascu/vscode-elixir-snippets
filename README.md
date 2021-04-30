@@ -49,6 +49,7 @@ Graciously borrowed all the snippets from the [TextMate bundle for Elixir](https
 | iip                | pipe to IO.inspect(module:line)                                                                          |
 | ip                 | IO.puts( ..)                                                                                             |
 | p                  | the pipeline operator                                                                                    |
+| pry                | IEx.pry                                                                                                  |
 | %                  | map/struct                                                                                               |
 | mdoc               | moduledoc                                                                                                |
 | mfs                | map from struct                                                                                          |
