@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.2.37
+
+- `pry` snippet, thank you @PJUllrich
+
 ## v0.2.36
 
 - readme format fix
