@@ -254,6 +254,12 @@
     "description": "print_eex",
     "scope": "text.elixir,text.html.elixir"
   },
+  "pry": {
+    "prefix": "pry",
+    "body": "require IEx; IEx.pry",
+    "description": "Debug with IEx.pry",
+    "scope": "source.elixir"
+  },
   "rec": {
     "prefix": "rec",
     "body": "receive do\n\t${1:{${2::${3:message_type}}, ${4:value}\\}} ->\n    ${0:# code}\nend\n",
