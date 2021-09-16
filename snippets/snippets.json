@@ -184,7 +184,8 @@
   "iib": {
     "prefix": "iib",
     "body": "IO.inspect(binding(), label: \"binding() #{__MODULE__}:#{__ENV__.line} #{DateTime.utc_now}\", limit: :infinity)",
-    "description": "IO.inspect() binding() with module name & line number"
+    "description": "IO.inspect() binding() with module name & line number",
+    "scope": "source.elixir"
   },
   "iil": {
     "prefix": "iil",
@@ -201,12 +202,14 @@
   "Inspect with relative path and line nr": {
     "prefix": "iins",
     "body": "|> IO.inspect(label: \"${0:${RELATIVE_FILEPATH}:${TM_LINE_NUMBER}}\")",
-    "description": "`IO.inspect` with a label containing relative path and line number. Label string can easily be discarded"
+    "description": "`IO.inspect` with a label containing relative path and line number. Label string can easily be discarded",
+    "scope": "source.elixir"
   },
   "iip": {
     "prefix": "iip",
     "body": "|> IO.inspect(label: \"#{__MODULE__}:#{__ENV__.line} #{DateTime.utc_now}\", limit: :infinity)",
-    "description": "IO.inspect() piped value with module name & line number"
+    "description": "IO.inspect() piped value with module name & line number",
+    "scope": "source.elixir"
   },
   "ip": {
     "prefix": "iip",
@@ -235,25 +238,26 @@
   "mdoc": {
     "prefix": "mdoc",
     "body": "@moduledoc \"\"\"\n$0\n\"\"\"",
-    "description": "moduledoc"
+    "description": "moduledoc",
+    "scope": "source.elixir"
   },
   "mfs": {
     "prefix": "mfs",
     "body": "Map.from_struct($0)",
     "description": "Map from Struct",
-    "scope": "source.elixir,"
+    "scope": "source.elixir"
   },
   "msan": {
     "prefix": "msan",
     "body": "Map.drop(${1:map, }[${2:keys}])",
     "description": "sanitize a map by dropping some keys",
-    "scope": "source.elixir,"
+    "scope": "source.elixir"
   },
   "p": {
     "prefix": "p",
     "body": "|> $0",
     "description": "your favorite pipeline (|>)",
-    "scope": "text.elixir,"
+    "scope": "text.elixir"
   },
   "pe": {
     "prefix": "pe",
