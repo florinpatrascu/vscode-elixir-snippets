@@ -75,7 +75,7 @@
     "prefix": ["dmod", "defmod"],
     "comments": [
       "Generates the namespace for a file.",
-      "e.g. A file with the path `lib/foo/bar/baz/boing.ex` would resolve to Foo.Bar.Baz.Boing.",
+      "e.g. A file with the path `lib/foo/bar/baz/boing.ex` would resolve to Foo.Bar.Baz.Boing."
     ],
     "body": [
       "defmodule ${RELATIVE_FILEPATH/^([^\\/\\\\]+[\\/\\\\])|(\\.ex|\\.exs)$|([^._\\/\\\\]+)|_|([\\/\\\\])/${3:/capitalize}${4:+.}/g} do",
