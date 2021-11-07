@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.2.39
+
+- Fix trailing comma #20. Thank you @easink
+
 ## v0.2.38
 
 - new regex formula for using the RELATIVE_FILEPATH instead of the TM_FILEPATH variable. This matches any level of nested folders (see William's question in [StackOverflow](https://stackoverflow.com/questions/69145815/vs-code-snippet-regex-for-relative-path)). Removed the "Test" at the end of the "ExUnit" snippet because as a (opinionated) convention the file name includes "\_test" at the end of the file and included the prefix ":", useful when the key and value are the same. Thank you @williamthome
