@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.2.40
+
+- Add a snippet for inspecting stacktraces #21. Thank you @s3cur3
+
 ## v0.2.39
 
 - Fix trailing comma #20. Thank you @easink
