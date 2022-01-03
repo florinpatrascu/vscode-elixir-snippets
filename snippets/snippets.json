@@ -211,6 +211,12 @@
     "description": "IO.inspect() piped value with module name & line number",
     "scope": "source.elixir"
   },
+  "ist": {
+    "prefix": "ist",
+    "body": "IO.inspect(Process.info(self(), :current_stacktrace), label: \"STACKTRACE\", limit: :infinity)",
+    "description": "`IO.inspect` the current stacktrace",
+    "scope": "source.elixir"
+  },
   "ip": {
     "prefix": "iip",
     "body": "IO.puts(\"$0\")",

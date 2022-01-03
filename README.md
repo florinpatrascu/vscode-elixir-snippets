@@ -46,6 +46,7 @@ Graciously borrowed all the snippets from the [TextMate bundle for Elixir](https
 | iil                | IO.inspect(label: ..)                                                                                    |
 | iill               | IO.inspect with label incl. the line number                                                              |
 | iins               | `IO.inspect` with a label containing relative path and line number. Label string can easily be discarded |
+| ist                | `IO.inspect` the current stacktrace                                                                      |
 | iip                | pipe to IO.inspect(module:line)                                                                          |
 | ip                 | IO.puts( ..)                                                                                             |
 | p                  | the pipeline operator                                                                                    |
