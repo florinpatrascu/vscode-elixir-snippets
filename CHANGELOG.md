@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.2.50
+
+- add two new snippets: mp, for Map.put/3, and: mpn, for Map.put_new/3
+
 ## v0.2.40
 
 - Add a snippet for inspecting stacktraces #21. Thank you @s3cur3

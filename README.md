@@ -54,6 +54,8 @@ Graciously borrowed all the snippets from the [TextMate bundle for Elixir](https
 | %                  | map/struct                                                                                               |
 | mdoc               | moduledoc                                                                                                |
 | mfs                | map from struct                                                                                          |
+| mp                 | Map.put/3 - puts the given value under key in map                                                        |
+| mpn                | Map.put_new/3 - puts the given value under key unless the entry key already exists in map                |
 | msan               | sanitize a Map by dropping some of its keys                                                              |
 | pe                 | print_eex                                                                                                |
 | rec                | receive                                                                                                  |
@@ -88,4 +90,4 @@ And copy the `vscode-elixir-snippets` folder into the `<user home>/.vscode/exten
 
 [MIT](LICENSE) License
 
-Copyright (c) 2017-2019 Florin T. PATRASCU
+Copyright (c) 2017-2024 Florin T. PATRASCU

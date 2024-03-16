@@ -253,6 +253,18 @@
     "description": "Map from Struct",
     "scope": "source.elixir"
   },
+  "mp": {
+    "prefix": "mp",
+    "body": "Map.put(${1:map}, ${2:key}, ${3:value})",
+    "description": "Puts the given value under key in map",
+    "scope": "source.elixir"
+  },
+  "mpn": {
+    "prefix": "mpn",
+    "body": "Map.put_new(${1:map}, ${2:key}, ${3:value})",
+    "description": "Puts the given value under key unless the entry key already exists in map",
+    "scope": "source.elixir"
+  },
   "msan": {
     "prefix": "msan",
     "body": "Map.drop(${1:map, }[${2:keys}])",
