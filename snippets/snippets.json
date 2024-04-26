@@ -67,7 +67,7 @@
   },
   "describe": {
     "prefix": "describe",
-    "body": "describe $1 do\n\t$0\nend",
+    "body": "describe \"$1\" do\n\t$0\nend",
     "description": "describe",
     "scope": "source.elixir"
   },
@@ -333,8 +333,14 @@
   },
   "test": {
     "prefix": "test",
-    "body": "test $1 do\n\t$0\nend",
+    "body": "test \"$1\" do\n\t$0\nend",
     "description": "test",
+    "scope": "source.elixir"
+  },
+  "testc": {
+    "prefix": "testc",
+    "body": "test \"$1\", %{$2} do\n\t$0\nend",
+    "description": "test with context",
     "scope": "source.elixir"
   },
   "trc": {

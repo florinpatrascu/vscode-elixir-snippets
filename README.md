@@ -17,7 +17,7 @@ Graciously borrowed all the snippets from the [TextMate bundle for Elixir](https
 | dmod               | defmodule                                                                                                |
 | defmc              | defmacrocallback                                                                                         |
 | defmp              | defmacrop                                                                                                |
-| describe           | describe .. do ..                                                                                        |
+| describe           | describe ".." do ..                                                                                      |
 | dmac               | defmacro                                                                                                 |
 | defp               | defp                                                                                                     |
 | defpro             | defprotocol                                                                                              |
@@ -60,7 +60,8 @@ Graciously borrowed all the snippets from the [TextMate bundle for Elixir](https
 | pe                 | print_eex                                                                                                |
 | rec                | receive                                                                                                  |
 | req                | require                                                                                                  |
-| test               | test .. do ..                                                                                            |
+| test               | test ".." do ..                                                                                          |
+| testc              | test "..", %{..} do ..                                                                                   |
 | unless             | unless                                                                                                   |
 | unlesse            | unless else                                                                                              |
 | unlesse:           | unless else (one line)                                                                                   |
