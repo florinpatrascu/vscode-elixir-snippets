@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.2.51
+
+- Add quotes to describe and test, add testc, i.e. `test "name of text", %{conn: conn} do ... end`
+
 ## v0.2.50
 
 - add two new snippets: mp, for Map.put/3, and: mpn, for Map.put_new/3
