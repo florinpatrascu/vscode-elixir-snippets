@@ -218,7 +218,7 @@
     "scope": "source.elixir"
   },
   "ip": {
-    "prefix": "iip",
+    "prefix": "ip",
     "body": "IO.puts(\"$0\")",
     "description": "IO.puts(..)",
     "scope": "source.elixir"
@@ -308,7 +308,7 @@
     "scope": "source.elixir"
   },
   "oke": {
-    "prefix": "ok",
+    "prefix": "oke",
     "body": "{:ok, $1} = $0",
     "description": "{:ok, ... } = ...",
     "scope": "source.elixir"
