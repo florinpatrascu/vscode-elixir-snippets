@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.2.52
+
+- Fix duplicate prefixes for ip and oke snippets #26. Thank you @FeedMyCat54
+
 ## v0.2.51
 
 - Add quotes to describe and test, add testc, i.e. `test "name of text", %{conn: conn} do ... end`
