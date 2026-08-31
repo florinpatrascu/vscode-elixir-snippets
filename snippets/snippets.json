@@ -78,7 +78,7 @@
       "e.g. A file with the path `lib/foo/bar/baz/boing.ex` would resolve to Foo.Bar.Baz.Boing."
     ],
     "body": [
-      "defmodule ${RELATIVE_FILEPATH/^([^\\/\\\\]+[\\/\\\\])|(\\.ex|\\.exs)$|([^._\\/\\\\]+)|_|([\\/\\\\])/${3:/capitalize}${4:+.}/g} do",
+      "defmodule ${RELATIVE_FILEPATH/^([^\\/\\\\]+[\\/\\\\])|(\\.ex|\\.exs)$|([^._\\/\\\\]+)|_|([\\/\\\\])/$3:/capitalize$4:+./g} do",
       "\t$0",
       "end"
     ],
@@ -376,7 +376,7 @@
   "Supervisor": {
     "prefix": "supervisor",
     "body": [
-      "defmodule ${RELATIVE_FILEPATH/^([^\\/\\\\]+[\\/\\\\])|(\\.ex|\\.exs)$|([^._\\/\\\\]+)|_|([\\/\\\\])/${3:/capitalize}${4:+.}/g} do",
+      "defmodule ${RELATIVE_FILEPATH/^([^\\/\\\\]+[\\/\\\\])|(\\.ex|\\.exs)$|([^._\\/\\\\]+)|_|([\\/\\\\])/$3:/capitalize$4:+./g} do",
       "\tuse Supervisor",
       "",
       "\tdef start_link(${args}) do",
@@ -396,7 +396,7 @@
   "DynamicSupervisor": {
     "prefix": "dynamic_supervisor",
     "body": [
-      "defmodule ${RELATIVE_FILEPATH/^([^\\/\\\\]+[\\/\\\\])|(\\.ex|\\.exs)$|([^._\\/\\\\]+)|_|([\\/\\\\])/${3:/capitalize}${4:+.}/g} do",
+      "defmodule ${RELATIVE_FILEPATH/^([^\\/\\\\]+[\\/\\\\])|(\\.ex|\\.exs)$|([^._\\/\\\\]+)|_|([\\/\\\\])/$3:/capitalize$4:+./g} do",
       "\tuse DynamicSupervisor",
       "",
       "\tdef start_link(${init_args}) do",
@@ -427,7 +427,7 @@
   "GenServer": {
     "prefix": "gen_server",
     "body": [
-      "defmodule ${RELATIVE_FILEPATH/^([^\\/\\\\]+[\\/\\\\])|(\\.ex|\\.exs)$|([^._\\/\\\\]+)|_|([\\/\\\\])/${3:/capitalize}${4:+.}/g} do",
+      "defmodule ${RELATIVE_FILEPATH/^([^\\/\\\\]+[\\/\\\\])|(\\.ex|\\.exs)$|([^._\\/\\\\]+)|_|([\\/\\\\])/$3:/capitalize$4:+./g} do",
       "\tuse GenServer",
       "",
       "\tdef start_link(${init_args}) do",
@@ -447,7 +447,7 @@
   "ExUnit": {
     "prefix": ["ex_unit", "exu"],
     "body": [
-      "defmodule ${RELATIVE_FILEPATH/^([^\\/\\\\]+[\\/\\\\])|(\\.ex|\\.exs)$|([^._\\/\\\\]+)|_|([\\/\\\\])/${3:/capitalize}${4:+.}/g} do",
+      "defmodule ${RELATIVE_FILEPATH/^([^\\/\\\\]+[\\/\\\\])|(\\.ex|\\.exs)$|([^._\\/\\\\]+)|_|([\\/\\\\])/$3:/capitalize$4:+./g} do",
       "\tuse ExUnit.Case",
       "\tdoctest$1",
       "",
